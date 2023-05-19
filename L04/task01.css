@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+:root {
+    --header-color: #39f;
+    --nav-hover: #0066ff;
+    --header-color2: #ff9933;
+    --nav-hover2: #ff6600;
+}
+
+@media(max-width:1000px) {
+    .topMenu {
+        background-color: #ff9933;
+    }
+
+
+}
+
+@media(max-width:1000px) {
+    .li:hover {
+        background-color: #ff6600;
+    }
+}
+
+
+
+body {
+    font-family: 'Nunito', 'Arial', sans-serif;
+    background-color: #cce6ff;
+}
+
+header {
+    background-color: var(--header-color);
+
+}
+
+#cLogo {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 2px 2px darkblue;
+
+}
+
+#cLogo:hover {
+    color: red;
+}
+
+.topMenu {
+    display: flex;
+    justify-content:space-between;
+} 
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+
+}
+
+ul {
+    font-size: 1.3em;
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: var(--nav-hover);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media(max-width:800px) {
+    #cLogo {
+        display: none;
+        color: red;
+    }
+}
